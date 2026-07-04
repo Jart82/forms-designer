@@ -1,0 +1,7 @@
+<p class="p-4 bg-white rounded-lg h-[calc(100vh-150px)] overflow-y-auto border-gray-200 shadow-sm">form-elements-menu works!</p>
+
+@for (type of fieldTypes; track type.type) {
+  <div class="flex items-center gap-2 p-2 border-b cursor-pointer hover:bg-gray-50">
+    <app-field-button [fieldType]="type" />
+  </div>
+}
