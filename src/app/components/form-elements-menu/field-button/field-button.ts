@@ -1,5 +1,6 @@
 import { Component, input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
+import { FieldTypeDefinition } from '../../../models/fields.interface';
 
 @Component({
   selector: 'app-field-button',
@@ -9,5 +10,5 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrls: ['./field-button.scss'],
 })
 export class FieldButton {
-  field = input.required;
+  fieldType = input.required<FieldTypeDefinition>();
 }

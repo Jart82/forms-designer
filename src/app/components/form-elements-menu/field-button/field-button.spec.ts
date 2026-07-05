@@ -13,6 +13,11 @@ describe('FieldButton', () => {
     .compileComponents();
 
     fixture = TestBed.createComponent(FieldButton);
+    fixture.componentRef.setInput('fieldType', {
+      type: 'text',
+      label: 'Text',
+      icon: 'text_fields',
+    });
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
